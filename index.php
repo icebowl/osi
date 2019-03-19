@@ -56,27 +56,27 @@ function getRandomImage(imgAr, path) {
 		   require "intro.html";
 	}
 	if ($get== 1) {
-	 require "about.html";
+	require "osi-content/physical-layer.html";
 	}
 
 	if ($get== 2) {
-	 require "contact.html";
+	 require "osi-content/data-link-layer.html";
 	}
 
 	if ($get== 3) {
-	 require "registration.html";
+	 require "osi-content/network-layer.html";
 	}
 
 	if ($get== 4) {
-	 require "locations.html";
+	require "osi-content/transport-layer.html";
 	}
 
 	if ($get== 5) {
-	 require "teachers.html";
+	 require "osi-content/session-layer.html";
 	}
 
 	if ($get== 6) {
-	 require "cte-funding.html";
+	 require "osi-content/presentation-layer.html";
 	}
 
 	if ($get== 7) {
@@ -107,7 +107,7 @@ function getRandomImage(imgAr, path) {
 		<li><a href="index.php?v=2">Data Link</a></li>
 		<li><a href="index.php?v=1">Physcial</a></li>
 		<li><a href="files/" target = "_blank" >Documents <tt>OPENS IN A NEW WINDOW </tt></a></li>
-		<img src = "img/osi-logo.png" width = "350px" class = "imagesize";>
+		<img src = "img/osi.png" width = "350px" class = "imagesize";>
 	</div>
 </div><!-- end row-->
 <div class="footer">
