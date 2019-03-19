@@ -80,7 +80,7 @@ function getRandomImage(imgAr, path) {
 	}
 
 	if ($get== 7) {
-	 require "osi-conetnt/application.html";
+	 require "osi-content/application-layer.html";
 	}
 
 	if ($get== 9) {
@@ -98,19 +98,16 @@ function getRandomImage(imgAr, path) {
 	</div>
 	<div class="col-2 col-m-2 menu">
 	  <ul>
-		<li><a href="index.php?v=0">Home</a></li>
-		<li><a href="index.php?v=1" >Application</a></li>
-		<li><a href="index.php?v=2" >Contact</a></li>
-		<li><a href="index.php?v=3">Registrations</a></li>
-		<li><a href="index.php?v=4">Inservice Locations</a></li>
-		<li><a href="index.php?v=5">Current Teachers</a></li>
-		<li><a href="index.php?v=6" >CTE Funding</a></li>
-		<li><a href="index.php?v=7">Frameworks</a></li>
-		<li><a href="index.php?v=9">Curriculum</a></li>
-		<li><a href="index.php?v=10">CCSS - MATH</a></li>
-		<li><a href="http://www.k12.wa.us/stem/default.aspx" target = "_blank">OSPI-STEM <tt>OPENS IN A NEW WINDOW </tt></a></li>
-		<li><a href="files/" target = "_blank" >Resources/Labs <tt>OPENS IN A NEW WINDOW </tt></a></li>
-		<img src = "img/wamc-logo.png" width = "350px" class = "imagesize";>
+		<li><a href="index.php?v=0">OSI-MODEL</a></li>
+		<li><a href="index.php?v=7">Application</a></li>
+		<li><a href="index.php?v=6">Presentation</a></li>
+		<li><a href="index.php?v=5">Session</a></li>
+		<li><a href="index.php?v=4">Transpost</a></li>
+		<li><a href="index.php?v=3">Network</a></li>
+		<li><a href="index.php?v=2">Data Link</a></li>
+		<li><a href="index.php?v=1">Physcial</a></li>
+		<li><a href="files/" target = "_blank" >Documents <tt>OPENS IN A NEW WINDOW </tt></a></li>
+		<img src = "img/osi-logo.png" width = "350px" class = "imagesize";>
 	</div>
 </div><!-- end row-->
 <div class="footer">
