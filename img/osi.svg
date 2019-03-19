@@ -68,13 +68,17 @@
        inkscape:randomized="0"
        d="m 87.690489,264.49405 -81.4098654,11.49307 5.0480294,82.06201 -59.743862,-56.48298 -61.011271,55.11153 6.91049,-81.9262 -81.12784,-13.33905 68.3611,-45.67731 -40.15349,-71.74506 78.334405,24.96752 31.057256,-76.125577 29.320311,76.811307 78.881256,-23.18199 -41.77258,70.81461 z"
        inkscape:transform-center-x="0.35167763"
-       inkscape:transform-center-y="-6.5475316" />
+       inkscape:transform-center-y="-6.5475316"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="-90.52581"
        y="221.40477"
-       id="text4608"><tspan
+       id="text4608"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan4606"
          x="-90.52581"
@@ -97,7 +101,9 @@
        xml:space="preserve"
        id="flowRoot4622"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,83.189331,70.303572)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,83.189331,70.303572)"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><flowRegion
          id="flowRegion4624"><rect
            id="rect4626"
            width="1057.1428"
