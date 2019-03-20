@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+<link rel="icon" href="https://wiki.wireshark.org/mm/image/favicon.ico" type="image/x-icon">
+<link href="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/css.css" rel="stylesheet" type="text/css">
+<link href="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/css_002.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index,nofollow">
+
+<title>DisplayFilters - The Wireshark Wiki</title>
+<script type="text/javascript" async="" src="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/ga.js"></script><script type="text/javascript" src="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/projection.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/ws-wiki-screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/ws-wiki-print.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static198/modernized/css/msie.css">
+<![endif]-->
+
+
+
+
+
+<link rel="Start" href="https://wiki.wireshark.org/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.wireshark.org/DisplayFilters?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.wireshark.org/DisplayFilters?action=print">
+<link rel="Search" href="https://wiki.wireshark.org/FindPage">
+<link rel="Index" href="https://wiki.wireshark.org/TitleIndex">
+<link rel="Glossary" href="https://wiki.wireshark.org/WordIndex">
+<link rel="Help" href="https://wiki.wireshark.org/HelpOnFormatting">
+</head>
+
+<body dir="ltr" lang="en">
+
+<div id="header">
+
+<form id="searchform" method="get" action="/DisplayFilters">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput" style="display: none;">Search:</label>
+<input id="searchinput" type="text" name="value" value="Search" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" class="disabled">
+<input id="titlesearch" name="titlesearch" type="submit" value="Titles" alt="Search Titles" disabled="disabled">
+<input id="fullsearch" name="fullsearch" type="submit" value="Text" alt="Search Full Text" disabled="disabled">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="https://wiki.wireshark.org/FrontPage"><img class="logo" src="DisplayFilters%20-%20The%20Wireshark%20Wiki_files/wsbadge186x57.png" alt="The Wireshark Wiki" border="0"></a></div>
+<div id="username"><a href="https://wiki.wireshark.org/DisplayFilters?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a href="https://wiki.wireshark.org/DisplayFilters">DisplayFilters</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="https://wiki.wireshark.org/FrontPage">FrontPage</a></li><li class="wikilink"><a href="https://wiki.wireshark.org/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="https://wiki.wireshark.org/FindPage">FindPage</a></li><li class="wikilink"><a href="https://wiki.wireshark.org/HelpContents">HelpContents</a></li><li class="current"><a href="https://wiki.wireshark.org/DisplayFilters">DisplayFilters</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.wireshark.org/DisplayFilters?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.wireshark.org/DisplayFilters?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/DisplayFilters">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show" selected="selected">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Delete Page</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Subscribe User</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Remove Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" dir="ltr" lang="en">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+</p><h1 id="DisplayFilters-1">DisplayFilters</h1>
+<span class="anchor" id="line-2"></span><p class="line862">Wireshark uses display filters for general packet filtering while viewing and for its <a href="https://wiki.wireshark.org/ColoringRules">ColoringRules</a>. <span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span></p><p class="line862">The basics and the syntax of the display filters are described in the <a class="https" href="https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html">User's Guide</a>. <span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span></p><p class="line862">The master list of display filter protocol <strong>fields</strong> can be found in the <a class="https" href="https://www.wireshark.org/docs/dfref/">display filter reference</a>. <span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span></p><p class="line862">If you need a display filter for a specific protocol, have a look for it at the <a href="https://wiki.wireshark.org/ProtocolReference">ProtocolReference</a>. <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span></p><p class="line867"></p><div class="table-of-contents"><p class="table-of-contents-heading">Contents</p><ol><li>
+<a href="#DisplayFilters-1">DisplayFilters</a><ol><li>
+<a href="#Display_filter_is_not_a_capture_filter">Display filter is not a capture filter</a></li><li>
+<a href="#Examples">Examples</a></li><li>
+<a href="#Gotchas">Gotchas</a></li><li>
+<a href="#See_Also">See Also</a></li><li>
+<a href="#External_Links">External Links</a></li></ol></li></ol></div> <span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span><p class="line867">
+</p><h2 id="Display_filter_is_not_a_capture_filter">Display filter is not a capture filter</h2>
+<span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><p class="line862">Capture filters (like <tt>tcp&nbsp;port&nbsp;80</tt>) are not to be confused with display filters (like <tt>tcp.port&nbsp;==&nbsp;80</tt>). See also <a href="https://wiki.wireshark.org/CaptureFilters#Capture_filter_is_not_a_display_filter">CaptureFilters#Capture_filter_is_not_a_display_filter</a>. <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span></p><p class="line867">
+</p><h2 id="Examples">Examples</h2>
+<span class="anchor" id="line-17"></span><p class="line862">Show only <a href="https://wiki.wireshark.org/SMTP">SMTP</a> (port 25) and <a href="https://wiki.wireshark.org/ICMP">ICMP</a> traffic: <span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><pre><span class="anchor" id="line-1"></span> tcp.port eq 25 or icmp</pre><span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span></li></ul><p class="line874">Show only traffic in the LAN (192.168.x.x), between workstations and servers -- no Internet: <span class="anchor" id="line-24"></span><span class="anchor" id="line-25"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span><pre><span class="anchor" id="line-1-1"></span>ip.src==192.168.0.0/16 and ip.dst==192.168.0.0/16</pre><span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span></li></ul><p class="line867"><a href="https://wiki.wireshark.org/TCP">TCP</a> buffer full <em>-- Source is instructing Destination to stop sending data</em> <span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span><pre><span class="anchor" id="line-1-2"></span> tcp.window_size == 0 &amp;&amp; tcp.flags.reset != 1</pre><span class="anchor" id="line-34"></span><span class="anchor" id="line-35"></span></li></ul><p class="line862">Filter on Windows <em>-- Filter out noise, while watching Windows Client - DC exchanges </em> <span class="anchor" id="line-36"></span><span class="anchor" id="line-37"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span><pre><span class="anchor" id="line-1-3"></span> smb || nbns || dcerpc || nbss || dns</pre><span class="anchor" id="line-40"></span><span class="anchor" id="line-41"></span></li></ul><p class="line862">Sasser worm: <em>--What sasser really did--</em> <span class="anchor" id="line-42"></span><span class="anchor" id="line-43"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-44"></span><span class="anchor" id="line-45"></span><pre><span class="anchor" id="line-1-4"></span>  ls_ads.opnum==0x09</pre><span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span></li></ul><p class="line862">Match packets containing the (arbitrary) 3-byte sequence 0x81, 0x60, 0x03 at the beginning of the <a href="https://wiki.wireshark.org/UDP">UDP</a> payload, skipping the 8-byte UDP header. Note that the values for the byte sequence implicitly are in hexadecimal only. <em>(Useful for matching homegrown packet protocols.)</em> <span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span><pre><span class="anchor" id="line-1-5"></span>  udp[8:3]==81:60:03</pre><span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span></li></ul><p class="line862">The "slice" feature is also useful to filter on the vendor identifier part (OUI) of the MAC address, see the <a href="https://wiki.wireshark.org/Ethernet">Ethernet</a>
+ page for details. Thus you may restrict the display to only packets 
+from a specific device manufacturer. E.g. for DELL machines only: <span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span><pre><span class="anchor" id="line-1-6"></span>  eth.addr[0:3]==00:06:5B</pre><span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span></li></ul><p class="line874">It is also possible to search for characters appearing anywhere in a field or protocol by using the contains operator. <span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span></p><p class="line874">Match packets that contains the 3-byte sequence 0x81, 0x60, 0x03 anywhere in the UDP header or payload: <span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span><pre><span class="anchor" id="line-1-7"></span>  udp contains 81:60:03</pre><span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span></li></ul><p class="line874">Match packets where SIP To-header contains the string "a1762" anywhere in the header: <span class="anchor" id="line-68"></span><span class="anchor" id="line-69"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span><pre><span class="anchor" id="line-1-8"></span>  sip.To contains "a1762"</pre><span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span></li></ul><p class="line874">The
+ matches, or ~, operator makes it possible to search for text in string 
+fields and byte sequences using a regular expression, using Perl regular
+ expression syntax. Note: Wireshark needs to be built with libpcre in 
+order to be able to use the matches operator. <span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span></p><p class="line874">Match HTTP requests where the last characters in the uri are the characters "gl=se": <span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span><pre><span class="anchor" id="line-1-9"></span>  http.request.uri matches "gl=se$"</pre><span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span></li></ul><p class="line874">Note:
+ The $ character is a PCRE punctuation character that matches the end of
+ a string, in this case the end of http.request.uri field. <span class="anchor" id="line-82"></span><span class="anchor" id="line-83"></span></p><p class="line874">Filter by a protocol ( e.g. SIP ) and filter out unwanted IPs: <span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span></p><p class="line867"><span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span></p><pre><span class="anchor" id="line-1-10"></span>  ip.src != xxx.xxx.xxx.xxx &amp;&amp; ip.dst != xxx.xxx.xxx.xxx &amp;&amp; sip</pre><span class="anchor" id="line-88"></span><p class="line867"><em>[ Feel free to contribute more ]</em> <span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span></p><p class="line867">
+</p><h2 id="Gotchas">Gotchas</h2>
+<span class="anchor" id="line-91"></span><p class="line862">Some <em>filter fields</em> match against multiple <em>protocol fields</em>. For example, "ip.addr" matches against both the <a href="https://wiki.wireshark.org/IP">IP</a>
+ source and destination addresses in the IP header. The same is true for
+ "tcp.port", "udp.port", "eth.addr", and others. It's important to note 
+that <span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><pre><span class="anchor" id="line-1-11"></span> ip.addr == 10.43.54.65</pre><span class="anchor" id="line-96"></span>is equivalent to <span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><pre><span class="anchor" id="line-1-12"></span> ip.src == 10.43.54.65 or ip.dst == 10.43.54.65</pre><span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span></li></ul><p class="line874">This
+ can be counterintuitive in some cases. Suppose we want to filter out 
+any traffic to or from 10.43.54.65. We might try the following: <span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span><pre><span class="anchor" id="line-1-13"></span> ip.addr != 10.43.54.65</pre><span class="anchor" id="line-106"></span>which is equivalent to <span class="anchor" id="line-107"></span><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><pre><span class="anchor" id="line-1-14"></span> ip.src != 10.43.54.65 or ip.dst != 10.43.54.65</pre><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span></li></ul><p class="line862">This translates to "pass all traffic except for traffic with a source IPv4 address of 10.43.54.65 <strong>and</strong> a destination IPv4 address of 10.43.54.65", which isn't what we wanted. <span class="anchor" id="line-112"></span><span class="anchor" id="line-113"></span></p><p class="line874">Instead we need to negate the expression, like so: <span class="anchor" id="line-114"></span><span class="anchor" id="line-115"></span></p><ul><li style="list-style-type:none"><span class="anchor" id="line-116"></span><span class="anchor" id="line-117"></span><pre><span class="anchor" id="line-1-15"></span> ! ( ip.addr == 10.43.54.65 )</pre><span class="anchor" id="line-118"></span>which is equivalent to <span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span><pre><span class="anchor" id="line-1-16"></span> ! (ip.src == 10.43.54.65 or ip.dst == 10.43.54.65)</pre><span class="anchor" id="line-122"></span><span class="anchor" id="line-123"></span></li></ul><p class="line862">This translates to "pass any traffic except with a source IPv4 address of 10.43.54.65 <strong>or</strong> a destination IPv4 address of 10.43.54.65", which is what we wanted. <span class="anchor" id="line-124"></span><span class="anchor" id="line-125"></span></p><p class="line874">This
+ can also happen if, for example, you have tunneled protocols, so that 
+you might have two separate IPv4 or IPv6 layers and two separate IPv4 or
+ IPv6 headers, or if you have multiple instances of a field for other 
+reasons, such as multiple IPv6 "next header" fields. <span class="anchor" id="line-126"></span><span class="anchor" id="line-127"></span></p><p class="line862">If you have a filter expression of the form <em>name</em> <em>op</em> <em>value</em>, where <em>name</em> is the name of a field, <em>op</em> is a comparison operator such as <tt>==</tt> or <tt>!=</tt> or <tt>&lt;</tt> or..., and <em>value</em> is a value against which you're comparing, it should be thought of as meaning "match a packet if there is <em>at least one</em> instance of the field named <em>name</em> whose value is (equal to, not equal to, less than, ...) <em>value</em>".  The negation of that is "match a packet if there are <em>no</em> instances of the field named <em>name</em> whose value is (equal to, not equal to, less than, ...) <em>value</em>"; simply negating <em>op</em>, e.g. replacing <tt>==</tt> with <tt>!=</tt> or <tt>&lt;</tt> with <tt>&gt;=</tt>, give you another "if there is at least one" check, which is not the negation of the original check. <span class="anchor" id="line-128"></span><span class="anchor" id="line-129"></span></p><p class="line867">
+</p><h2 id="See_Also">See Also</h2>
+<span class="anchor" id="line-130"></span><p class="line867"><a href="https://wiki.wireshark.org/CaptureFilters">CaptureFilters</a> <span class="anchor" id="line-131"></span><span class="anchor" id="line-132"></span></p><p class="line867">
+</p><h2 id="External_Links">External Links</h2>
+<span class="anchor" id="line-133"></span><ul><li><p class="line891"><a class="http" href="http://www.askapache.com/htaccess/sniff-http-to-debug-apache-htaccess-and-httpdconf.html">Displaying HTTP traffic to debug Apache</a> <span class="anchor" id="line-134"></span></p></li><li><p class="line862">Capture and display filter <a class="http" href="http://packetlife.net/blog/2008/oct/18/cheat-sheets-tcpdump-and-wireshark/">Cheat sheets</a> <span class="anchor" id="line-135"></span></p></li></ul><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" dir="ltr" lang="en">DisplayFilters  (last edited 2017-01-23 15:27:54 by <span title="Chris @ 192.156.110.202[192.156.110.202]"><a href="https://wiki.wireshark.org/ChristopherMaynard" title="Chris @ 192.156.110.202[192.156.110.202]">ChristopherMaynard</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.wireshark.org/DisplayFilters?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.wireshark.org/DisplayFilters?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/DisplayFilters">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show" selected="selected">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="disabled" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="disabled" class="disabled">Delete Page</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Subscribe User</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="show" disabled="disabled" class="disabled">Remove Spam</option>
+<option value="show" disabled="disabled" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="disabled" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+
+<table class="credits" width="98%" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td valign="top">
+Original content on this site is available under the GNU General Public License.<br>
+See the <a href="https://wiki.wireshark.org/License">License</a> page for details.
+    </td>
+    <td valign="top" align="right">
+Powered by <a href="http://moinmoin.wikiwikiweb.de/">MoinMoin</a>
+and <a href="http://www.python.org/">Python</a>.
+<br>
+Please don't pee in the pool.
+    </td>
+  </tr>
+</tbody></table>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-605389-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- / Google Analytics -->
+
+
+</div>
+
+
+
+</body></html>

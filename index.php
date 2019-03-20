@@ -1,7 +1,6 @@
 <?php
-// wamc index
 //session_start();
-//$_SESSION['pagename'] = "wamc_index";
+//$_SESSION['pagename'] = "osi_index";
 //include 'db/db.php'; include 'db/error.php';
 //include 'db/pushhits.php';
 ?>
@@ -9,9 +8,9 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+<head><title>OSI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/wamc.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <style>
 .imgdiv {
@@ -20,25 +19,10 @@
 
     </style>
 
-    <script type="text/javascript">
-// place your images in this array
-var random_images_array = ['banner1.png', 'banner2.png', 'banner2.png', 'banner3.png','banner4.png','banner5.png','banner6.png','banner7.png','banner8.png','banner9.png','banner10.png'];
 
-function getRandomImage(imgAr, path) {
-    path = path || 'banners/'; // default path here
-    var num = Math.floor( Math.random() * imgAr.length );
-    var img = imgAr[ num ];
-    var imgStr = '<img src="' + path + img + '" alt = "">';
-    document.write(imgStr); document.close();
-}
-
-</script>
-</head>
 <body>
 <div class="header">
-	    <!-- This script segment displays an image from the array -->
-    <script type="text/javascript">getRandomImage(random_images_array, 'banners/')</script>
-
+	<img src = "img/osi-banner.png" height = "70px">
 </div>
 <div class="row">
 	<div class="col-9 col-m-12">
@@ -102,7 +86,7 @@ function getRandomImage(imgAr, path) {
 		<li><a href="index.php?v=7">Application</a></li>
 		<li><a href="index.php?v=6">Presentation</a></li>
 		<li><a href="index.php?v=5">Session</a></li>
-		<li><a href="index.php?v=4">Transport</a></li>
+		<li><a href="index.php?v=4">Transpost</a></li>
 		<li><a href="index.php?v=3">Network</a></li>
 		<li><a href="index.php?v=2">Data Link</a></li>
 		<li><a href="index.php?v=1">Physcial</a></li>
