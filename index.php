@@ -102,7 +102,7 @@ function getRandomImage(imgAr, path) {
 		<li><a href="index.php?v=7">Application</a></li>
 		<li><a href="index.php?v=6">Presentation</a></li>
 		<li><a href="index.php?v=5">Session</a></li>
-		<li><a href="index.php?v=4">Transpost</a></li>
+		<li><a href="index.php?v=4">Transport</a></li>
 		<li><a href="index.php?v=3">Network</a></li>
 		<li><a href="index.php?v=2">Data Link</a></li>
 		<li><a href="index.php?v=1">Physcial</a></li>
