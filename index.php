@@ -96,6 +96,15 @@
 </div><!-- end row-->
 <div class="footer">
 		<center>
+			<?php
+			$ncolor = array('#B35050','#50B350' ,'#5050B3' ,'#B3B350','#50B3B3','#B350B3','#DC7F32','#32DC7F','#7F32DC' ,'#DC327F','#327FDC','#7FDC32','#505050','#B3B3B3','#FDF6E3' ,'#FFEDBF');
+			$fcolor = array('#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#000',	'#000');
+			for ($i = 0; $i< 16; $i++){
+				$link  = "<span style='padding:5px 5px 1px 5px;background-color:".$ncolor[$i]."; color:".$fcolor[$i]."'>$i</span>";
+				echo $link;
+			}
+			?>
+			<hr />
 			  <?php  echo "Today is " . date("m/d/Y"); ?>
 			<br />
 	OSI - MODEL

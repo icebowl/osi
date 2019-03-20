@@ -1,20 +1,22 @@
 /*
-base03    #002b36  
-base02    #073642  
-base01    #586e75 
-base00    #657b83 
-base0     #839496 
-base1     #93a1a1 
-base2     #eee8d5  
-base3     #fdf6e3 
-yellow    #b58900  
-orange    #cb4b16  
-red       #dc322f  
-magenta   #d33682  
-violet    #6c71c4 
-blue      #268bd2  
-cyan      #2aa198  
-green     #859900  
+brown1	#B35050
+green1	#50B350
+blue1	#5050B3
+yellow1	#B3B350
+celeste	#50B3B3
+pruple1	#B350B3
+brown2	#DC7F32
+green2	#32DC7F
+purple2	#7F32DC
+red1	#DC327F
+blue2	#327FDC
+green3	#7FDC32
+dark1	#505050
+grey1	#B3B3B3
+cream1	#FDF6E3
+cream2	#FFEDBF
+  
+ 
 */
 
 
@@ -56,7 +58,7 @@ text-decoration: none;
 .menu li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: #657b83;
+    background-color: #50B3B3;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
